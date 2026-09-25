@@ -7,7 +7,7 @@ A full-stack, AI-powered travel planning web application that generates complete
 The project consists of two completely separate projects communicating strictly via REST API:
 
 - **`backend/`**: Node.js + Express (CommonJS), `@anthropic-ai/sdk` (Claude), Zod validation (requests & AI responses), and `express-rate-limit`.
-- **`frontend/`**: React 18 + Vite + TailwindCSS, Axios (90-second timeout), React Router, Lucide icons, and `sessionStorage` persistence.
+- **`frontend/`**: React 18 + Vite + TailwindCSS, Axios (90-second timeout), React Router, Lucide icons, `sessionStorage` persistence, and **Vercel Speed Insights** for real-user performance monitoring.
 
 ---
 
@@ -48,3 +48,17 @@ Frontend will be available on `http://localhost:5173`.
   - **Chat Concierge**: Natural conversational assistant that parses trip requirements on the fly.
 - **Day-Wise Schedule & Navigation**: Morning, afternoon, and evening breakdowns with interactive Google Maps links.
 - **Export & Print**: One-click print-optimized export to PDF.
+- **Performance Monitoring**: Vercel Speed Insights integration tracks Core Web Vitals and real-user performance metrics.
+
+---
+
+## Performance Monitoring
+
+This project includes **Vercel Speed Insights** for comprehensive performance tracking:
+
+- **Real User Monitoring (RUM)**: Track actual user experience metrics
+- **Core Web Vitals**: Monitor LCP, FID, CLS, FCP, TTFB, and INP
+- **Zero Configuration**: Automatically enabled in production deployments
+- **Privacy Compliant**: No cookies, anonymized data only
+
+For detailed setup information, see [SPEED_INSIGHTS_SETUP.md](./SPEED_INSIGHTS_SETUP.md).
